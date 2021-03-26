@@ -1,2 +1,2 @@
-# algorithm-
-algorithm in Python, C, Java
+# Python Coding Interview
+algorithm in Python
