@@ -2,7 +2,7 @@ import collections
 import re
 
 
-class foo:
+class Solution:
     def isPalindrome1(self, s: str) -> bool:
         strs = []
         for char in s:
@@ -30,7 +30,7 @@ class foo:
         return s == s[::-1]
 
 s = 'absba'
-f = foo()
+f = Solution()
 print(f.isPalindrome1(s))
 print(f.isPalindrome2(s))
 print(f.isPalindrome3(s))

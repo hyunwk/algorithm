@@ -1,5 +1,6 @@
 from typing import List
-class Solutions:
+
+class Solution:
     def trap1(self, height:List[int])->int :
         left, right = 0, len(height) - 1
         volume = 0
@@ -36,7 +37,7 @@ class Solutions:
         return volume
 
 
-b = Solutions()
+b = Solution()
 height = [0,1,0,2,1,0,1,3,2,1,2,1]
 print(b.trap1(height))
 print(b.trap2(height))

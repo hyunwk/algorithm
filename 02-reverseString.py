@@ -1,5 +1,5 @@
 from typing import List
-class foo:
+class Solution:
     def reverseString1(self, s: List[str]) -> None:
         left, right = 0, len(s) -1
         while left < right:
@@ -10,7 +10,7 @@ class foo:
     def reverseString2(self, s: List[str]) -> None:
         s.reverse()
 s =  ["s", "d"]
-f = foo()
+f = Solution()
 
 for i in s:
     print(i, end=' ')
