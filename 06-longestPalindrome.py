@@ -1,7 +1,10 @@
+from builtins import str
+
+
 class Solutions:
     def logestPalindrome(self, s: str) -> str:
         def expand(left: int, right: int)->str:
-            while (0 <= left and right < len(str) - 1 and str[left] == str[right]):
+            while 0 <= left and right < len(str) - 1 and str[left] == str[right]:
                 left -= 1
                 right += 1
             return str[left + 1 : right]

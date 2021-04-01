@@ -12,6 +12,7 @@ class Solution:
                 sum += min(pair)
                 pair = []
         return sum
+
     def arrayPairSum2(self, nums: List[int])->int:
         sum = 0
 
@@ -22,6 +23,7 @@ class Solution:
 
     def arrayPairSum3(self, nums: List[int])->int:
         return sum(sorted(nums)[::2])
+
 nums = [6,2,6,5,1,2]
 b = Solution()
 print(b.arrayPairSum1(nums))
