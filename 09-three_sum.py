@@ -41,7 +41,7 @@ class Solutions:
         return result
 
 b = Solutions()
-nums = [-1,0,1,2,-1,-4]
+ree_sum2(self, nums : List[int])-> List[innums = [-1,0,1,2,-1,-4]
 for i in b.three_sum1(nums):
     print(i)
 for i in b.three_sum2(nums):

@@ -1,5 +1,4 @@
 class MyCircularQueue:
-
     def __init__(self, k: int):
         self.q = [None] * k
         self.maxlen = k
@@ -33,7 +32,7 @@ class MyCircularQueue:
 
     def isFull(self) -> bool:
         return self.re == self.fr and self.q[self.re] is not None
-obj = MyCircularQueue(k)
+obj = MyCircularQueue()
 # param_1 = obj.enQueue(value)
 # param_2 = obj.deQueue()
 # param_3 = obj.Front()
