@@ -43,3 +43,18 @@ var maxDepth = function(root) {
     }
     return maxDepth;
 }
+
+// dfs with recursion
+var maxDepth = function(root) {
+    let maxDepth = 0;
+
+    const dfs = (node, depth) => {
+        if (!node) {
+            maxDepth = Math.max(depth, maxDepth);
+            return ;
+        }
+        dfs(node.left, depth+1);
+        dfs(node.right, depth+1)
+    }
+    dfs(root, 0);
+}
