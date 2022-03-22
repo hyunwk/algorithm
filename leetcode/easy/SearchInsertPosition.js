@@ -8,16 +8,16 @@ var searchInsert = function(nums, target) {
         return 0;
 
     let left = 0;
-    let right = nums.length - 1;
+    let right = nums.length;
 
-    while (left <= right) {
+    while (left < right) {
         let mid = Math.floor(left + (right-left) / 2);
         if (target == nums[mid]) 
             return mid;
-        else if (target > nums[mid])
-            left = mid + 1;
+        else if (target < nums[mid])
+            right = mid;
         else
-            right = mid-1;
+            left = mid+1;
     }
     return left;
 };
